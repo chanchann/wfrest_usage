@@ -3,10 +3,9 @@ cmake_minimum_required(VERSION 3.6)
 project(wfrest_usage 
 	LANGUAGES C CXX)
 
-
+set(CMAKE_CXX_STANDARD 11)
 set(CXX_FLAGS
         -g
-        -std=c++11
         -rdynamic
         -pthread
         -fno-exceptions
