@@ -1,6 +1,16 @@
 cmake_minimum_required(VERSION 3.6)
 
-project(wfrest_usage)
+project(wfrest_usage 
+	LANGUAGES C CXX)
+
+
+set(CXX_FLAGS
+        -g
+        -std=c++11
+        -rdynamic
+        -pthread
+        -fno-exceptions
+        )
 
 find_package(ZLIB REQUIRED)
 find_package(OpenSSL REQUIRED)
