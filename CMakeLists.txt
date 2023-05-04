@@ -45,5 +45,5 @@ else ()
 	set(WFREST_LIB wfrest)
 endif ()
 
-add_executable(test test.cc)
-target_link_libraries(test ${WFREST_LIB})
+add_executable(demo demo.cc)
+target_link_libraries(demo ${WFREST_LIB})
